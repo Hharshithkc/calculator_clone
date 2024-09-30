@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+   <div class="background1">
+    <!-- heading -->
+    <div class="heading">simple calculator</div>
+
+
+    <!-- second box -->
+    <div class="background2">
+
+
+
+       
+        <!-- text area -->
+        <div >
+            <input type="text"  id="dt"name="dt">
+        </div>
+       
+        <!-- first row -->
+
+        <div id="d1">
+            <input type="button" class="b1 button"  value="ac" onclick ="dt.value =' ' ">
+            <input type="button" class="b2 button" value="de" onclick =" dt.value = dt.value.toString().slice(0,-1)">
+            <input type="button" class="b3 button"  value="."  onclick ="dt.value +='.' ">
+            <input type="button" class="b4 button"  value="/"  onclick="dt.value  +='/' ">
+            
+         </div>
+   
+
+         <!-- second row -->
+
+        <div id="d2">
+            <input type="button" class="b5 button" value="7" onclick="dt.value +='7' ">
+            <input type="button" class="b6 button" value="8" onclick="dt.value +='8' ">
+            <input type="button" class="b7 button" value="9" onclick="dt.value +='9' ">
+            <input type="button" class="b8 button" value="*"onclick="dt.value  +='*' ">
+         </div>
+
+         <!-- third row -->
+
+        <div id="d3">
+            <input type="button"class="b9 button"   value="4" onclick ="dt.value +='4' ">
+            <input type="button" class="b10 button" value="5" onclick ="dt.value +='5' ">
+            <input type="button" class="b11 button" value="6" onclick ="dt.value +='6' ">
+            <input type="button" class="b12 button" value="-" onclick ="dt.value +='-' ">
+
+         </div>
+         
+         <!-- fourth row -->
+
+        <div id="d4">
+            <input type="button"class="b13 button" value="1"   onclick ="dt.value +='1' ">
+            <input type="button" class="b14 button" value="2"  onclick ="dt.value +='2' ">
+            <input type="button" class="b15 button" value="3"  onclick ="dt.value +='3' ">
+            <input type="button" class="b16 button"  value="+" onclick= "dt.value +='+' ">
+
+         </div>
+
+         <!-- last row -->
+
+        <div id="d5">
+            <input type="button"class="b17 button" value="00" onclick ="dt.value +='00' ">
+            <input type="button" class="b18 button" value="0" onclick ="dt.value +='0' ">
+            <input type="button" class="b19 button" value="=" onclick ="dt.value=eval(dt.value)"  +='=' ">
+            
+
+         </div>
+   
+
+
+   
+   
+
+
+
+</div>
+   <!-- closing background 1  -->
+</body>
+</html>
